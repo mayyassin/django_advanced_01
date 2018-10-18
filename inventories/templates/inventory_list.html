@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Inventory List</title>
+    </head>
+    <body>
+        {% for obj in inventory %}
+            <ul>
+                <li>{{ obj.name }}</li>
+                <li>{{ obj.store.name }}</li>
+                <li>{{ obj.is_empty }}</li>
+                <li>{{ obj.last_updated }}</li>
+            </ul>
+        {% endfor %}
+    </body>
+</html>
